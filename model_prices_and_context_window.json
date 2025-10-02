@@ -1,4 +1,12 @@
 {
+    "qwen3-max": {
+        "litellm_provider": "ali",
+        "max_input_tokens": 32000,      // 你可以根据官方文档或实际情况填写
+        "max_tokens": 32000,            // 最大输出 token 数
+        "mode": "chat",                 // 或 "completion"，根据模型类型
+        "input_cost_per_token": 0.0001, // 单 token 输入价格（举例，实际请查官方）
+        "output_cost_per_token": 0.0002 // 单 token 输出价格（举例，实际请查官方）
+    }
     "1024-x-1024/50-steps/bedrock/amazon.nova-canvas-v1:0": {
         "litellm_provider": "bedrock",
         "max_input_tokens": 2600,
